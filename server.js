@@ -23,8 +23,8 @@ var articleOne= {
 function createTemplate (data) {
 var title=data.tile;
 var date= data.date;
-var heading =heading.data;
-var content=heading.content;
+var heading =data.heading;
+var content=data.content;
 
 var htmlContent=`
 <html>
