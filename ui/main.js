@@ -25,6 +25,8 @@ button.onclick = function(){
         }
     };
     
-    
+   request.open("GET","http://charuchhimpa.imad.hasura-app.io/counter",true);
+   request.send(null);
+   
    
 };
