@@ -15,7 +15,7 @@ body{
 }
 /*-- banner --*/
 .banner{
-	background: url(../images/6.jpg) no-repeat 0px 0;
+	background: url(/ui/6.jpg) no-repeat 0px 0;
     background-size: cover;
     padding: 1em 0 5em;
 }
@@ -350,7 +350,7 @@ body{
 /*-- //about --*/
 /*-- statistics --*/
 .statistics{
-	background:url(../images/s2.jpg) no-repeat 0px 0px;
+	background:url(/ui/s2.jpg) no-repeat 0px 0px;
 	background-size:cover;
 }
 .jarallax {
@@ -516,7 +516,7 @@ body{
 /*-- //experience --*/
 /*-- feedback --*/
 .feedback{
-	background:url(../images/3.jpg) no-repeat 0px 0px;
+	background:url(/ui/3.jpg) no-repeat 0px 0px;
 	background:size:cover;
 }
 .feedback-top{
