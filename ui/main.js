@@ -1,56 +1,92 @@
-/*console.log('Loaded!');
-var element = document.getElementById("main-text");
-element.innerHTML="New Value";
+$(document).ready(function(){
 
-var img=document.getElementById("madi");
-var marginLeft =0;
-function moveRight (){
-    marginLeft=marginLeft+5;
-    img.style.marginLeft=marginLeft +"px";
+toggle_nav_container();
+gotoByScroll();
+
+
+});
+
+
+
+var toggle_nav_container = function () {
+
+
+
+	var 	$toggleButton = $('#toggle_m_nav');
+			$navContainer = $('#m_nav_container');
+			$menuButton = $('#m_nav_menu')
+			$menuButtonBars = $('.m_nav_ham');
+			$wrapper = $('#wrapper');
+
+	// toggle the container on click of button (can be remapped to $menuButton)
+
+	$toggleButton.on("click", function(){
+
+		// declare a local variable for the window width
+		var $viewportWidth = $(window).width();
+
+		// if statement to determine whether the nav container is already toggled or not
+
+		if($navContainer.is(':hidden'))
+		{	
+			$wrapper.removeClass('closed_wrapper');
+			$wrapper.addClass("open_wrapper");
+			$navContainer.slideDown(200).addClass('container_open').css("z-index", "2");
+			// $(window).scrollTop(0);
+			$menuButtonBars.removeClass('button_closed');
+			$menuButtonBars.addClass('button_open');
+			$("#m_ham_1").addClass("m_nav_ham_1_open");
+			$("#m_ham_2").addClass("m_nav_ham_2_open");
+			$("#m_ham_3").addClass("m_nav_ham_3_open");
+
+		}
+		else
+		{
+			$navContainer.css("z-index", "0").removeClass('container_open').slideUp(200)
+			$menuButtonBars.removeClass('button_open')
+			$menuButtonBars.addClass('button_closed')
+			$wrapper.removeClass('open_wrapper')
+			$wrapper.addClass("closed_wrapper")
+			$("#m_ham_1").removeClass("m_nav_ham_1_open");
+			$("#m_ham_2").removeClass("m_nav_ham_2_open");
+			$("#m_ham_3").removeClass("m_nav_ham_3_open");
+
+		}
+	});
+
+
+
 }
-img.onclick =function() {
-    var interval =setInterval(moveRight, 50);
-};*/
-//Counter code
-var button = document.getElementById('counter');
-button.onclick = function(){
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){
-            if(request.status === 200){
-                var counter =request.responseText;
-                var span = document.getElementById('count');
-                span.innerHTML =counter.toString();
-            }
-        }
-    };
-    
-   request.open("GET","http://charuchhimpa.imad.hasura-app.io/counter",true);
-   request.send(null);
-   
-   
-};
 
-var submit= document.getElementById("submit_btn");
-submit.onclick=function(){
-     var request = new XMLHttpRequest();
-    request.onreadystatechange = function(){
-     if(request.readyState === XMLHttpRequest.DONE){
-            if(request.status === 200){
-              var names = request.responseText;
-              names=JSON.parse(names);
-                var list ="";
-                for(var i=0;i<names.length;i++){
-                    list += '<li>' + names[i] + '</li>';
-                }
-                var ul = document.getElementById("namelist");
-                ul.innerHTML = list;
-            }
-        }
-    };
-    var nameInput = document.getElementById("name");
-    var name = nameInput.value;
-   request.open("GET","http://charuchhimpa.imad.hasura-app.io/submit-name?name="+name,true);
-   request.send(null);  
-};
-    
+
+// Function that takes the href value of links in the navbar and then scrolls 
+//the div on the page whose ID matches said value. This only works if you use 
+//a consistent naming scheme for the navbar anchors and div IDs
+
+var gotoByScroll = function (){
+
+	$(".m_nav_item a").on("click", function(e) {
+
+		e.preventDefault();
+		// var $divID =$(this).attr("href");
+		// var $scrollToDiv = "$(" + "'" + $divID + "'" +")";
+		
+		$('html,body').animate({
+   scrollTop: $($(this).attr("href")).offset().top - 50
+}, "slow");
+
+	});
+		
+
+
+
+}
+
+
+
+
+
+
+
+
+
