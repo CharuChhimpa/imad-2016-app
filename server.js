@@ -105,10 +105,25 @@ app.get('/:articleName', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
+app.get('/ui/bootstrap.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
+});
+app.get('/ui/cm-overlay.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cm-overlay.css'));
+});
+app.get('/ui/font-awesome.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'font-awesome.css'));
+});
+app.get('/ui/owl.carousel.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'owl.carousel.css'));
+});
+
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
