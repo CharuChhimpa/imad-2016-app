@@ -117,13 +117,45 @@ app.get('/ui/font-awesome.css', function (req, res) {
 app.get('/ui/owl.carousel.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'owl.carousel.css'));
 });
+app.get('/ui/main.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.css'));
+});
+app.get('/ui/owl.theme.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'owl.theme.css'));
+});
+
 
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-
-
+app.get('/ui/bars.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bars.js'));
+});
+app.get('/ui/bootstrap.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.js'));
+});
+app.get('/ui/jarallax.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jarallax.js'));
+});
+app.get('/ui/SmoothScroll.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'SmoothScroll.min.js'));
+});
+app.get('/ui/.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
 
 app.get('/ui/1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '1.jpg'));
