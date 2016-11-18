@@ -157,11 +157,63 @@ app.get('/ui/owl.carousel.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'owl.carousel.js'));
 });
 
-
 app.get('/ui/1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '1.jpg'));
 });
-
+app.get('/ui/3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '3.jpg'));
+});
+app.get('/ui/6.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', '6.jpg'));
+});
+app.get('/ui/arrows.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'arrows.png'));
+});
+app.get('/ui/close.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'close.png'));
+});
+app.get('/ui/f1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'f1.jpg'));
+});
+app.get('/ui/f4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'f4.jpg'));
+});
+app.get('/ui/next.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'next.png'));
+});
+app.get('/ui/p1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p1.jpg'));
+});
+app.get('/ui/p2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p2.jpg'));
+});
+app.get('/ui/p3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p3.jpg'));
+});
+app.get('/ui/p4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p4.jpg'));
+});
+app.get('/ui/p5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p5.jpg'));
+});
+app.get('/ui/p6.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p6.jpg'));
+});
+app.get('/ui/p7.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p7.jpg'));
+});
+app.get('/ui/p8.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p8.jpg'));
+});
+app.get('/ui/p9.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p9.jpg'));
+});
+app.get('/ui/prev.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'prev.png'));
+});
+app.get('/ui/s2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's2.jpg'));
+});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
