@@ -141,21 +141,22 @@ app.get('/ui/jarallax.js', function (req, res) {
 app.get('/ui/SmoothScroll.min.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'SmoothScroll.min.js'));
 });
-app.get('/ui/.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/jquery-1.11.1.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery-1.11.1.min.js'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/jquery.cm-overlay.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.cm-overlay.js'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/jquery.mobile.custom.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.mobile.custom.min.js'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/jquery.tools.min.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.tools.min.js'));
 });
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/ui/owl.carousel.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'owl.carousel.js'));
 });
+
 
 app.get('/ui/1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '1.jpg'));
