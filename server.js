@@ -215,6 +215,24 @@ app.get('/ui/s2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 's2.jpg'));
 });
 
+app.get('/ui/FontAwesome.otf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'FontAwesome.otf'));
+});
+app.get('/ui/fontawesome-webfont.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fontawesome-webfont.eot'));
+});
+app.get('/ui/fontawesome-webfont.svg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fontawesome-webfont.svg'));
+});
+app.get('/ui/fontawesome-webfont.ttf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fontawesome-webfont.ttf'));
+});
+app.get('/ui/fontawesome-webfont.woff', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fontawesome-webfont.woff'));
+});
+app.get('/ui/fontawesome-webfont.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fontawesome-webfont.woff2'));
+});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
